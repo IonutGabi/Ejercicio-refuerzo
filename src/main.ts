@@ -220,21 +220,14 @@ const mostrarNota = () => {
 
     if (parrafo && parrafo instanceof HTMLParagraphElement) {
       let mensaje: string = "";
-      switch (true) {
-        case media >= 0 && media <= 4:
-          mensaje = "Insuficiente";
-          break;
-        case media >= 5 && media <= 6:
-          mensaje = "Suficiente";
-          break;
-        case media >= 7 && media <= 9:
-          mensaje = "Notable";
-          break;
-        case media === 10:
-          mensaje = "Sobresaliente";
-          break;
-        default:
-          mensaje = "Nota no válida";
+      if (media >= 0 && media <= 4) {
+        mensaje = "Insuficiente";
+      } else if (media >= 5 && media <= 6) {
+        mensaje = "Suficiente";
+      } else if (media >= 7 && media <= 9) {
+        mensaje = "Notable";
+      } else if (media === 10) {
+        mensaje = "Sobresaliente";
       }
       parrafo.textContent = mensaje;
     }
