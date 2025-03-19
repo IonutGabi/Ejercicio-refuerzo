@@ -82,7 +82,7 @@ const calculoIvaDinamico = (numero: number) => {
 };
 calculoIvaDinamico(20);
 
-// 7. ¡Por fin es viernes! Escribe un programa que te diga cuantas horas te quedan para llegar al viernes.
+// 6. ¡Por fin es viernes! Escribe un programa que te diga cuantas horas te quedan para llegar al viernes.
 /*
 > ¡¡PISTAS!!
 > Para trabajar con fechas JavaScript nos ofrece el objeto [date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
@@ -117,7 +117,7 @@ calculosDiasHastaElViernes(Date.now());
 const fechaEjemplo = new Date(2025, 2, 21).getTime();
 calculosDiasHastaElViernes(fechaEjemplo);
 
-/* 8. Introduce un número por un input, y que te muestre la sucesión de [Fibonacci](https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci) según el número introducido.
+/* 7. Introduce un número por un input, y que te muestre la sucesión de [Fibonacci](https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci) según el número introducido.
 Por ejemplo, si introduzco un 8, la salida tiene que ser: `0, 1, 1, 2, 3, 5, 8, 13`*/
 
 const calculoSerieFibonacci = (numero: number) => {
@@ -144,7 +144,7 @@ if (
 }
 
 /*
- 10. Realiza un programa que pida una hora y muestre un mensaje.
+ 8. Realiza un programa que pida una hora y muestre un mensaje.
 - Buenos días (6 a 12).
 - Buenas Tardes (13 a 20).
 - Buenas Noches (20 a 5).
@@ -162,7 +162,7 @@ const muestraMensajeSegunHora = (numero: number) => {
 
 muestraMensajeSegunHora(5);
 
-/* 10. Una asignatura está compuesta por cuatro examenes, para aprobar hay que sacar más de un 3 en cada uno de ellos, y la media de los 4 examenes debe tener en total una puntuación de más de 5 (el examen se puntua de 0 a 10), crea un programa en el que introduzcas cuatro notas y te diga si eres apto o no.
+/* 9. Una asignatura está compuesta por cuatro examenes, para aprobar hay que sacar más de un 3 en cada uno de ellos, y la media de los 4 examenes debe tener en total una puntuación de más de 5 (el examen se puntua de 0 a 10), crea un programa en el que introduzcas cuatro notas y te diga si eres apto o no.
 Te pasamos un posible html como referencia (puedes mostrar el resultado por consola o por pantalla):*/
 
 const calcularNota = () => {
@@ -194,7 +194,7 @@ if (botonCalcularNota && botonCalcularNota instanceof HTMLButtonElement) {
   botonCalcularNota.addEventListener("click", calcularNota);
 }
 
-/* 11. Amplia la nota del ejercicio anterior para que te de la nota, Insuficiente, Suficiente, Notable, Sobresaliente
+/* 10. Amplia la nota del ejercicio anterior para que te de la nota, Insuficiente, Suficiente, Notable, Sobresaliente
 
 - Insuficiente => 0 a 4
 - Suficiente => 5 a 6
@@ -246,7 +246,7 @@ if (botonMostrarNota && botonMostrarNota instanceof HTMLButtonElement) {
   botonMostrarNota.addEventListener("click", mostrarNota);
 }
 
-// 12. Muestra los números multiples de 5 de 0 a 100 usando un bucle for.
+// 11. Muestra los números multiples de 5 de 0 a 100 usando un bucle for.
 
 const calculaNumerosMultiplesCincoConBucleFor = () => {
   const num = 5;
@@ -258,7 +258,7 @@ const calculaNumerosMultiplesCincoConBucleFor = () => {
 
 calculaNumerosMultiplesCincoConBucleFor();
 
-// 13. Muestra los números multiples de 5 de 0 a 100 usando un bucle while.
+// 12. Muestra los números multiples de 5 de 0 a 100 usando un bucle while.
 
 const calculaNumerosMultiplesCincoConBucleWhile = () => {
   const num = 5;
@@ -273,7 +273,7 @@ const calculaNumerosMultiplesCincoConBucleWhile = () => {
 
 calculaNumerosMultiplesCincoConBucleWhile();
 
-// 14. Un usuario me dice un número del 0 al 10 y le saco la tabla de multiplicar de ese número.
+// 13. Un usuario me dice un número del 0 al 10 y le saco la tabla de multiplicar de ese número.
 
 const mostrarTablaMultiplicar = (numero: number) => {
   for (let i = 0; i < 11; i++) {
@@ -287,7 +287,7 @@ const mostrarTablaMultiplicar = (numero: number) => {
 
 mostrarTablaMultiplicar(8);
 
-/*15. Escribe un programa que me diga si un número que introducido por teclado es primo o no.
+/*14. Escribe un programa que me diga si un número que introducido por teclado es primo o no.
 > Recuerda que un número primo es aquel que es mayor que uno y tiene únicamente dos divisores: él mismo y el 1 */
 
 const muestraSiEsPrimo = (numero: number) => {
@@ -310,7 +310,7 @@ if (muestraSiEsPrimo(numero)) {
   console.log(`El número ${numero} no es primo`);
 }
 
-/* 16. Escribe un programa que te calcula el número factorial de un numero (no uses librerías externas).
+/* 15. Escribe un programa que te calcula el número factorial de un numero (no uses librerías externas).
   > Un factorial es un número que es el producto de todos los números enteros desde 1 a N
   > ejemplo `1 x 2 x 3 x 4 x 5 = 120`. */
 
@@ -324,7 +324,7 @@ const calcularFactorial = (numero: number) => {
 
 calcularFactorial(5);
 
-/* En una encuesta, introducimos 10 valores (o un array de N), con el numero de hijos de cada familia, queremos obtener: el minimo, el maximo, la media, la moda.
+/* 16. En una encuesta, introducimos 10 valores (o un array de N), con el numero de hijos de cada familia, queremos obtener: el minimo, el maximo, la media, la moda.
 Te pasamos un posible html como referencia (puedes mostrar el resultado por consola o por pantalla):
 */
 
